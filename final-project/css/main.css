@@ -1,0 +1,85 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    width: 1200px;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+header {
+    background-color: black;
+    color: #c78c06;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    flex: 1;
+    max-width: 80px;
+    margin: 60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #c78c06;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 60px;
+  }
+
+  li a:hover {
+    background-color: #c78c06;
+    color: black;
+  }
+
+  #welcome {
+    height: 580px;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+  .main-banner {
+    width: 100% px;
+    height: auto;
+  }  
+  
+  .welcome-text {
+    position: absolute;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    width: 90%;
+    height: 515px;
+    text-align: left;
+    margin-top: 32.5px;
+    margin-left: 59px;
+    color: white;
+    padding-left: 10px;
+  }
+
+  #welcome h1 {
+    font-size: 48px;
+  }
+
+
+
+  
+

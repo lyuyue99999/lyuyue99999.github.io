@@ -1,5 +1,5 @@
 /* mobile styles */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 760px) {
   body {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
@@ -9,8 +9,7 @@
   /* header styles */
 header {
   background-color: black;
-  height: 600px;
-  width: 760px;
+  /* width: 760px; */
 }
 
 .logo {
@@ -31,7 +30,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 header .wrapper {
@@ -47,15 +47,12 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0; 
-  width: 760px;
-  height: 200px;
+  width: 100%;
+  height: 70%;
 }
 
 li {
   height: 75px;
-  transition: height 0.3s, z-index 0.3s;
-  position: relative;
-  z-index: 1;
 }
 
 li a {
@@ -71,14 +68,12 @@ li a:hover {
   color: black;
   height: 50px;
   background-color: #c78c06;
-  margin: 10px;
-  margin-top: 0;
+  margin: 0px;
 }
 
 .search {
   position: relative;
   display: flex;
-  top: 140px;
   justify-content: center;
   margin-bottom: 10px;
   margin: 10px;
@@ -101,7 +96,7 @@ header .material-symbols-outlined {
 
 /* welcome styles */
 #welcome {
-  height: 580px;
+  height: 80%;
   position: relative;
   margin-top: 0px;
   overflow: hidden;
@@ -109,7 +104,7 @@ header .material-symbols-outlined {
 
 .main-banner {
   width: 100% px;
-  height: auto;
+  height: 80%;
 }  
 
 .welcome-text {
@@ -117,7 +112,7 @@ header .material-symbols-outlined {
   margin: auto;
   background-color: rgba(0,0,0,0.5);
   width: 90%;
-  height: 515px;
+  height: 90%;
   text-align: left;
   margin-left: 31px;
   margin-top: 30.5px;
@@ -139,6 +134,7 @@ header .material-symbols-outlined {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .connect .material-symbols-outlined {
@@ -148,11 +144,11 @@ header .material-symbols-outlined {
 /* about us styles */
 #about-us {
   background-color: #ffe6ac;
-  height: 600px;
+  height: auto;
 }
 
 .about-us1 {
-  width: 735px;
+  width: 98%;
   margin: 10px;
 }
 
@@ -166,6 +162,7 @@ header .material-symbols-outlined {
 #about-us p {
   font-size: 14px;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 /* our service styles  */
@@ -175,45 +172,17 @@ header .material-symbols-outlined {
 }
 
 .our-service {
-  margin-left: 10x;
-  margin-right: 10px;
-  display: grid;
-  grid-template-columns: repeat(1, auto);
   position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .our-service #block {
-  margin: 10px;
   background-color: #ffe6ac;
-}
-
-.our-service #block:nth-child(1) {
-  grid-column: span 3;
-  margin-right: 0;
-}
-
-.our-service #block:nth-child(2) {
-  grid-column: span 3;
-  margin-right: 0;
-}
-
-.our-service #block:nth-child(3) {
-  grid-column: span 2;
-  margin-left: 10px;
-  margin-right: 0;
-  width: 740px;
-}
-
-.our-service #block:nth-child(4) {
-  grid-column: span 2;
-  margin-left: 10;
-  margin-right: 0;
-}
-
-.our-service #block:nth-child(5) {
-  grid-column: span 2;
-  margin-right: 0;
-  margin-left: 10;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .our-service .img {
@@ -221,24 +190,28 @@ header .material-symbols-outlined {
 }
 
 .our-service .button {
-  width: 268px;
-  height: 70px;
+  width: 50%;
+  height: 5%;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .our-service h2 {
   padding: 10px;
   font-size: 40px;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .our-service p {
   padding: 10px;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .our-service .material-symbols-outlined {
@@ -251,8 +224,8 @@ header .material-symbols-outlined {
 }
 
 .vision1 {
-  width: 760px;
-  height: 300px;
+  width: 100%;
+  height: 20%;
 }
 
 #vision h1 {
@@ -272,10 +245,10 @@ header .material-symbols-outlined {
 
 #vision .button {
   position: absolute;
-  top: 195px;
+  top: 70%;
   left: 10px;
-  width: 210px;
-  height: 86px;
+  width: 50%;
+  height: 77px;
   background-color: black;
   color: white;
   display: flex;
@@ -295,30 +268,35 @@ header .material-symbols-outlined {
   margin-right: 10px;
 }
 
+#our-team h1 {
+  margin-left: 10px;
+}
+
 .our-team .block:nth-child(1) {
-  width: 740px;
+  width: 100%;
   margin-bottom: -10px;
 }
 
 .our-team .block:nth-child(2) {
   background-color: #ffe6ac;
   padding: 10px;
-  height: 225px;
+  height: auto;
   position: relative;
-  width: 720px;
+  width: 97.4%;
+  margin-right: 10px;
 }
 
 .our-team .block:nth-child(3) {
-  width: 740px;
+  width: 100%;
   margin-bottom: -10px;
 }
 
 .our-team .block:nth-child(4) {
   background-color: #ffe6ac;
   padding: 10px;
-  height: 225px;
+  width: 97.4%;
+  height: auto;
   position: relative;
-  width: 720px;
 }
 .our-team h2 {
   position: relative;
@@ -406,7 +384,7 @@ footer .wrapper {
 
 }
  /* desktop styles */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 760px) {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
@@ -421,22 +399,17 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    width: 100%;
 }
 
 .logo {
-    flex: 1;
-    max-width: 80px;
-    margin: 60px;
+    width: 80px;
+    margin: 10%;
     margin-right: 0;
 }
 
 /* navigation styles */
-header .wrapper {
-    margin: 60px;
-    padding: 0;
-    position: relative;
-  }
-  
+
   ul {
     list-style-type: none;
     display: flex;
@@ -454,7 +427,7 @@ header .wrapper {
     display: block;
     text-decoration: none;
     margin-left: 40px;
-    width: 80px;
+    width: 80%;
   }
 
   li:nth-child(6) {
@@ -470,7 +443,7 @@ header .wrapper {
   .search {
     position: relative;
     display: flex;
-    right: 74px;
+    right: 60px;
   }
 
   .search input[type="text"] {
@@ -488,10 +461,13 @@ header .wrapper {
 
   /* welcome styles */
   #welcome {
-    height: 580px;
+    height: auto;
     position: relative;
     margin-top: 0px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .main-banner {
@@ -504,12 +480,12 @@ header .wrapper {
     margin: auto;
     background-color: rgba(0,0,0,0.5);
     width: 90%;
-    height: 515px;
+    height: 80%;
     text-align: left;
-    margin-left: 59px;
-    margin-top: 32.5px;
+    margin: 20%;
     color: white;
     padding-left: 10px;
+    padding-bottom: 10px;
   }
 
   #welcome h1 {
@@ -521,7 +497,7 @@ header .wrapper {
   .connect {
     background-color: #c78c06;
     height: 5rem;
-    width: 12rem;
+    width: 30%;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -535,31 +511,35 @@ header .wrapper {
 /* about styles */
   #about-us {
     background-color: #ffe6ac;
-    height: 300px;
+    height: 390px;
   }
 
   .about-us1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: 50%;
+    height: auto;
     float: left;
-    margin-left: 100px;
+    margin-left: 8.3%;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   #about-us h1 {
     margin-top: 0;
     padding-top: 30px;
-    padding-left: 610px;
+    padding-left: 60%;
     font-size: 2.5rem;
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #about-us p {
-    padding-left: 610px;
-    padding-right: 100px;
+    padding-left: 60%;
+    padding-right: 10px;
     font-size: 14px;
+    padding-bottom: 10px;
   }
 
   /* our services styles */
@@ -641,7 +621,8 @@ header .wrapper {
   }
 
   .vision1 {
-    width: 1200px;
+    width: 100%;
+    height: 300px;
   }
 
   #vision h1 {
@@ -661,7 +642,7 @@ header .wrapper {
 
   #vision .button {
     position: absolute;
-    top: 180px;
+    top: 70%;
     left: 100px;
     width: 150px;
     height: 60px;
@@ -684,7 +665,7 @@ header .wrapper {
 
   .our-team {
     margin-left: 100px;
-    padding-right: 100px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: repeat(2, 500px);
     grid-template-rows: repeat(2, auto);
@@ -692,7 +673,7 @@ header .wrapper {
 
   .our-team .block:nth-child(1) {
     grid-column: span 1;
-    width: 500px;
+    width: 100%;
   }
 
   .our-team .block:nth-child(2) {
@@ -737,7 +718,7 @@ header .wrapper {
     margin-left: 100px;
     margin-right: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, auto);
   }
 
